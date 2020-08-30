@@ -1,0 +1,92 @@
+// main: ../style.less
+
+.team__content {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+}
+
+.team__col {
+    width: 33.33333%;
+}
+
+.team__name {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.team__prof {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.team__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team__contact a { 
+    outline: none; 
+    border: 0; 
+    text-decoration: none; 
+    margin-right: 1.5rem;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team__contact svg {
+    display: block;
+    content: "";
+    border: 1px solid #f0f1f1;
+    background: #f0f1f1;
+
+    padding: 8px;
+    border-radius: 8px;
+    height: 4rem;
+    width: 4rem;
+    
+    transition: background .2s linear;
+    
+    &:hover {
+        background: @blue;
+    }
+}
+
+.team__dots button{
+    margin-bottom: 12rem; 
+}
+
+a svg #fb, a svg #twitter, a svg #comments, a svg #dribble { 
+  transition: fill .2s linear;
+}
+
+a svg:hover #fb, a svg:hover #twitter, a svg:hover #comments, a svg:hover #dribble { 
+  fill: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+// main: ../style.less
+
+.service {
+    margin-top: 10rem;
+    padding-bottom: 9rem;
+    /*КОЛОНОЧКИ*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service__item {
+    width: 33.33333%;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: -1rem;
+}
+
+.service__column {
+    max-width: 100%;
+    height: auto;
+    margin-right: 3rem;
+    border: 1px solid @white;
+    background: @white;
+    padding: 5rem ;
+    
+    transition: background .2s linear, box-shadow .2s linear, border-color .2s linear, color .2s linear;
+    
+      &:hover {
+        background: @green;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-color: @green;
+        color: @white;
+    }
+}
+
+.service__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.service__text {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    max-width: 26rem;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.service__icon i{
+    font-size: 6rem;
+}
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+// compress: true
+
+@import "vars"; //подключаем переменные
+
+html {
+    font-size: 10px;    // 1 rem = 10 px
+    overflow-x: hidden;
+   // max-width: 1150px;
+}
+
+body {
+    margin: 0;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 2rem;
+    color: @black;
+    //min-width: 1150px;
+
+   /* &.no-scroll {
+        overflow: hidden;
+    }*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    height: 6rem;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 700;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;    //алгоритм подсчета размеров: все отступы элементов идут вовнутрь, и не меняются размеры блоков
+}
+
+
+/*    Blocks    */
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/search";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/icon";
+@import "blocks/section";
+@import "blocks/about";
+@import "blocks/service";
+@import "blocks/works";
+@import "blocks/price";
+@import "blocks/team";
+@import "blocks/blog";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/media";
+
+
+/*    Media    
+@media (max-width: @laptop){
+    #about__text{
+        font-size: 2rem;
+    }
+}*/

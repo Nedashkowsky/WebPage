@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.intro {
+    /*выравние интро по центру страницы*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 1400px;
+    max-width: 100%;
+    height: auto;
+    //height: 100vh;    //не знаю, что это, но отступы в порядке, поээтому пусть будет так
+    
+    position: relative;
+    
+    -webkit-background-size: cover;
+    background-size: cover;
+    background: url("../img/intro.jpg") center no-repeat;
+    
+    
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 1170px;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+.intro__title {
+    font-size: 6rem;
+    color: @white;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    margin-top: 30rem;
+}
+
+.intro__subtitle {
+    font-size: 2.2rem;
+    color: @white;
+    margin-bottom: 10rem;
+}
+
+
+
+
+
+
+
+
+
+

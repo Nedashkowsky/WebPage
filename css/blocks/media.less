@@ -1,0 +1,312 @@
+// main: ../style.less
+
+@media (max-width: @laptop){
+    
+    /*    Header     */
+    .header{
+        padding: 3.5rem 0;
+    }
+    
+    
+    /*    Container     */
+    .container{
+        &--header{
+            margin: -10px auto;
+        }
+    }
+    
+    
+    /*    Search     */
+    .search input{
+        display: none;
+    }
+    
+    
+    /*    Section     */
+    .section__subtitle{
+        font-size: 2rem;
+    }
+    
+    
+    /*    About     */
+    .about__text{
+        font-size: 2rem;
+    }
+    
+    
+    /*    Service     */
+    .service__text{
+        font-size: 1.7rem;
+    }
+    
+    
+    /*    Works     */
+    .works{
+        margin: 0 13rem;
+    }
+    
+    .works__nav{
+        padding: 0 8rem;
+    }
+    
+    .works__col{
+       width: 50%;
+    }
+    
+    .works__item{
+        margin-bottom: 2rem;
+    }
+    
+    
+    /*    Buttons     */
+    .btn--works{
+        margin: 4px auto;
+    }
+    
+    .btn--works__big{
+        margin-bottom: 10rem;
+    }
+    
+    .btn--white{
+        margin-bottom: 7rem;
+    }
+    
+    
+    /*    Team     */
+    .team__content{
+        margin: 10rem 0 8rem 0;
+    }
+    
+    .team__col{
+        width: 50%;
+        padding-top: 3rem;
+        
+        &:last-child{
+            margin: 0 auto;
+        }
+    }
+    
+    
+    /*    Blog     */
+    .blog__content{
+        padding-bottom: 7rem;
+    }
+    
+    .blog__photo--right{
+        margin: -2.3rem 0 0 -4rem;
+    }
+    
+    .blog__photo--left{
+        margin: -1.3rem 3rem 0 -0;
+    }
+}
+
+
+@media (max-width: @tablet){
+    
+    /*    Navigation     */
+    .nav{
+        display: none;
+        width: 100%;
+        height: 21rem;
+        flex-direction: column;
+        background-color: @green;
+        text-align: right;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        
+        border-top: 1px solid @black;
+
+    }
+    
+    .nav__link{
+        padding-top: 1rem;
+    }
+  
+    .nav.show{
+        display: flex;
+    }
+    
+    
+    /*    Search     */
+    .search{
+        display: none;
+    }
+    
+    
+    /*    Buttons     */
+    .btn--white{
+        margin-left: 74%;
+    }
+    
+    .burger{
+        display: block;
+    }
+    
+    
+    /*    Blog     */
+    .blog__photo--right{
+        margin: -6.3rem 0 0 -4rem;
+    }
+    
+    
+    /*    Price     */
+    .price__text p:after{
+        margin: 1.5rem 6.5rem 3rem;
+    }
+}
+
+
+@media (max-width: @tablet-min){
+    
+    /*    Section     */
+    .section__subtitle{
+        font-size: 1.8rem;
+    }
+    
+    
+    /*    Button     */
+    .btn{
+        font-size: 1.8rem;
+    }
+    
+    .btn--white {
+        margin-left: 69%;
+    }
+    
+    
+    /*    Service     */
+    .service__item{
+        width: 50%;
+    }
+    
+    
+    /*    Price     */
+    .price__content{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+    
+    .price__col{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: @mobile){
+    
+    /*    Intro     */
+    .intro__title{
+        font-size: 4rem;
+    }
+    
+    .intro__subtitle{
+        font-size: 2rem;
+    }
+    
+    
+    /*    Button     */
+    .btn {
+        padding: 2rem 1.5rem;
+    }
+    
+    .btn--works{
+            padding: 1rem 1rem;
+            font-size: 1.5rem;
+    }
+    
+    .btn--white {
+        margin-left: 50%;
+    }
+    
+    /*    About     */
+    .about__item{
+        width: 100%;
+    }
+    
+    
+    /*    Service     */
+    .service__item {
+        width: 100%;
+    }
+    
+    
+    /*    Works     */
+    .works {
+        margin: 0 0;
+    }
+    
+    .works__nav {
+        margin-top: 6rem;
+        margin-bottom: 7rem;
+    }
+    
+    
+    /*    Price     */
+    .price__col {
+        width: 100%;
+    }
+    
+    
+    /*    Team     */
+    .team__col{
+        width: 100%;
+    }
+    
+    
+    /*    Blog     */
+    .blog__content {
+        padding-bottom: 0rem;
+    }
+    
+    
+    /*    Contacts     */
+    .contacts__text{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: @mobile-min){
+    
+    /*    Button     */
+    .btn {
+        margin-bottom: 3rem;
+    }
+    
+    
+    /*    Contacts     */
+    .contacts__item {
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+    }
+    
+    .contacts__text {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    
+    .contacts__photo{
+        width: auto;
+    }
+    
+    
+    /*    Form     */
+    .form {
+        width: 100%;
+    }
+    
+    .form--email {
+        margin-right: 1.8rem; 
+    }
+    
+    
+    /*    Footer     */
+    footer {
+        padding: 0 0 -1rem;
+        
+    }
+}

@@ -1,0 +1,177 @@
+// main: ../style.less
+
+.btn {   
+    display: inline-block;
+    vertical-align: top;
+    
+    text-align: center;
+    
+    font-family: inherit;
+    font-size: 2rem;
+    color: @white;
+    text-decoration: none;
+    line-height: 1.1;  //line-height разделить на размер шрифта в фш
+    
+    border: 3px solid @white;
+   // border-radius: 2em;
+    background: none;
+    padding: 2.5rem 1.7rem;
+    min-width: 210px;
+    cursor: pointer;
+    transition: background-color .2s linear,color .2s linear,border-color .2s linear;
+    
+    &:hover {
+        background-color: @green;
+        border-color: @green;
+    }
+    
+     /*если после кнопки идет кнопка, то для нее пропишем...*/
+     + .btn {        
+        margin-left: 2.2rem;
+    } 
+    
+    &--black {
+        border: 2px solid @black;
+        color: @black;
+        min-width: 0;
+        padding: 1.5rem 2rem;
+        
+        &:hover {
+            background-color: @green;
+            border-color: @white;
+            color: @white;
+        }
+    }
+    
+    &--works {
+        border: 1.5px solid @green;
+        color: @black;
+        
+        padding: 1rem 2rem;
+        max-height: 5.4rem;
+        margin: 1px auto;
+        min-width: 10rem;
+        
+        &:hover {
+            color: @white;
+        }
+    }
+    
+    &--works__big {
+        background-color: @green;
+        border-color: @green;
+        
+        margin: 0 auto;
+        margin-bottom: 13rem;
+        //padding: 1.5rem 6rem;
+        //padding: 0 auto;
+        min-width: 230px;
+        
+        transition: box-shadow .2s linear;
+        
+        &:hover {
+             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    }
+    
+    &--white{
+        border: 2px solid @white;
+        border-radius: 1rem;
+        outline: none;
+        
+        height: 7rem;
+        
+        margin-bottom: 10rem;
+        margin-left: 78%;
+        
+        transition: color .2s linear, background-color .2s linear, border-color .2s linear;
+        
+        &:hover {
+            background-color: @white;
+            border-color: @white;
+            color: @black;
+        }
+    }
+    
+    
+    &--price{
+        margin-bottom: 10rem;
+    }
+}
+
+
+.dots {
+    font-size: 0;
+    border: 1px solid @green;
+    border-radius: 10px;
+    background: @green;
+    outline: none;
+    
+    width: 15px;
+    height: 15px;
+    margin-right: 1rem;
+    
+    transition: background .2s solid, border-color .2s solid;
+    //transition: border-color .2s solid;
+    
+    &:last-child {
+         margin-right: 0;
+    }
+    
+    &:hover {
+        border-color: @blue;
+        background: @blue;
+        cursor: pointer;
+    }
+}
+
+
+.burger{
+    display: none;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 1rem 2rem;
+}
+
+.burger__item{
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    position: relative;
+    color: transparent;
+    background-color: @black;
+    font-size: 0;
+    
+    &:before, &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: @black;
+        z-index: 10000;
+        left: 0;
+    }
+    
+    &:before{
+        top: -1rem;
+    }
+    
+    &:after{
+        top: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

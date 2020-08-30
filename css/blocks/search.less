@@ -1,0 +1,49 @@
+// main: ../style.less
+
+.search {
+    display: flex;
+}
+
+.search  input {
+      height: 4rem;
+      width: 0;
+      padding: 0 4rem 0 1.5rem;
+      border: none;
+      //border-bottom: 2px solid transparent;
+      outline: none;
+      background: transparent;
+      transition: .4s cubic-bezier(0, 0.8, 0, 1);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+}
+
+.search input:focus {
+  width: 300px;
+  z-index: 1;
+  border-bottom: 2px solid @green;
+}
+
+.search button {
+    background: transparent;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.search button:before {
+  content: "\f002";    //если это убрать, то иконка пропадет ._.
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: @black;
+}
+
+
+
+
+

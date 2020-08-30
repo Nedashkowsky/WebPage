@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- для адаптивной верстки -->
+    <meta name="viewport" content="width=1150">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8ecc4a0ae.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+ <div class="page">  
+    <header  id="home"    class="header">
+        <div class="container  container--header">
+            <div class="header__inner">
+                <div class="header__logo">Your Logo</div>
+                <nav class="nav"  id="nav">
+                     <a class="nav__link"  id="btnHome"  data-scroll="#intro" href="#" >Home</a>   
+                     <a  id="btnAbout"  data-scroll="#about" href="#" class="nav__link">About</a>   
+                     <a  id="btnServis"  data-scroll="#services" href="#" class="nav__link">Servicing</a>   
+                     <a  id="btnPortfolio"  data-scroll="#works" href="#" class="nav__link">Portfolio</a>   
+                     <a  id="btnBlog"  data-scroll="#blog" href="#" class="nav__link">Blog</a>   
+                     <a  id="btnContact"  data-scroll="#contacts" href="#" class="nav__link">Contact us</a>
+                        
+                    <div class="search">
+                        <form>
+                            <input type="search" placeholder="Search..."> 
+                            <button type="submit"></button>
+                        </form> 
+                    </div>  
+                </nav>
+                
+                <button class="burger"  id="navToggle"   type="button">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>    <!-- /.header__inner -->
+        </div>    <!-- /.container -->
+    </header>   
+    
+
+    <!--   INTRO  -->
+    <div  id="intro"  class="intro">
+       <div class="container">
+            <div class="intro__inner"> 
+                <div class="intro__title">Web development project</div>
+                <div class="intro__subtitle">Very suitable to support all web development projects</div>
+                
+                <button class="btn" type="button">OUR SERVICES</button>
+                <button class="btn" type="button">HIRE IS NOW</button>
+                
+                <div class="icon">
+                  <a href="#" class="icon__link"> <i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>    <!-- /.intro__inner -->
+         
+        </div>    <!-- /.container -->
+    </div>    
+    
+    
+    <!--   ABOUT  -->
+    <div  id="about"   class="section">
+        <div class="container">
+                <div class="section__title">About Us</div>
+                <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                
+                <div class="about">
+                        <div class="about__item">
+                            <div class="about__column">
+                                <div class="about__icon"> <img src="img/internet.png" alt=""></div>
+                                <div class="about__title">Awesome Icons</div>
+                                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__item">
+                             <div class="about__column">
+                                <div class="about__icon"> <img src="img/transfer.png" alt=""></div>
+                                <div class="about__title">One Page</div>
+                                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__item">
+                             <div class="about__column">
+                                <div class="about__icon"> <img src="img/head.png" alt=""></div>
+                                <div class="about__title">Fully Responsive</div>
+                                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                            </div>
+                        </div>
+                        
+                </div>    <!-- /.about --> 
+        </div>    <!-- /.container -->
+    </div>   
+    
+    
+     <!--   SERVICES  -->
+     <div  id="services"    class="section  section--blue">
+         <div class="container">
+             <div class="section__title">Our Services</div>
+             <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>  
+             
+            <div class="service">
+                        <div class="service__item">
+                            <div class="service__column">
+                                <div class="service__icon"> <i class="fas fa-mobile-alt"></i></div>
+                                <div class="service__title">Research</div>
+                                <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                                
+                                <button class="btn  btn--black">READ MORE</button>
+                            </div>
+                        </div>
+                        
+                           <div class="service__item">
+                            <div class="service__column">
+                                <div class="service__icon"> <i class="fas fa-mobile-alt"></i></div>
+                                <div class="service__title">Portfolio</div>
+                                <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                                
+                                <button class="btn  btn--black">READ MORE</button>
+                            </div>
+                        </div>
+                        
+                           <div class="service__item">
+                            <div class="service__column">
+                                <div class="service__icon"> <i class="fas fa-mobile-alt"></i></div>
+                                <div class="service__title">Support</div>
+                                <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                                
+                                <button class="btn  btn--black">READ MORE</button>
+                            </div>
+                        </div>
+                        
+                         <div class="service__item">
+                            <div class="service__column">
+                                <div class="service__icon"> <i class="fas fa-mobile-alt"></i></div>
+                                <div class="service__title">Documentation</div>
+                                <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                                
+                                <button class="btn  btn--black">READ MORE</button>
+                            </div>
+                        </div>
+                        
+                           <div class="service__item">
+                            <div class="service__column">
+                                <div class="service__icon"> <i class="fas fa-mobile-alt"></i></div>
+                                <div class="service__title">Development</div>
+                                <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                                
+                                <button class="btn  btn--black">READ MORE</button>
+                            </div>
+                        </div>
+                        
+                           <div class="service__item">
+                            <div class="service__column">
+                                <div class="service__icon"> <i class="fas fa-mobile-alt"></i></div>
+                                <div class="service__title">Design</div>
+                                <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                                
+                                <button class="btn  btn--black">READ MORE</button>
+                            </div>
+                        </div>
+                        
+                </div>    <!-- /.service -->        
+         </div>    <!-- /.container -->
+     </div>    
+    
+    
+    <!--   WORKS  -->
+    <div  id="works" class="section">
+        <div class="container">
+            <div class="section__title">Latest Works</div>
+             <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div> 
+             
+             <div class="works">
+                 <div class="works__nav">
+                    <button class="btn  btn--works" type="button">ALL</button>
+                    <button class="btn  btn--works" type="button">WEB DESIGN</button>
+                    <button class="btn  btn--works" type="button">UI/UX DESIGN</button>
+                    <button class="btn  btn--works" type="button">MOCKUPS</button>
+                </div>    <!-- /.works__nav -->
+
+               <div class="works__content">
+
+                    <div class="works__col">
+                        <div class="works__item">
+                          <img src="img/clock_03_03.jpg" class="works__img">
+                           <div class="works__info">
+                                <div class="works__title">Hand Watch</div>
+                                <div class="works__category">ui/ux design</div>
+                            </div>
+                        </div>
+
+                    </div>    <!-- /.works__col -->
+                    
+                    
+                    <div class="works__col">
+                          <div class="works__item">
+                          <img src="img/Layer%204.png" class="works__img">
+                           <div class="works__info">
+                                <div class="works__title">Title</div>
+                                <div class="works__category">subtitle</div>
+                            </div>
+                        </div>
+                    </div>    <!-- /.works__col -->
+                    
+                    
+
+                    <div class="works__col">
+                        <div class="works__item">
+                          <img src="img/Layer%202.png" class="works__img">
+                           <div class="works__info">
+                                <div class="works__title">Title</div>
+                                <div class="works__category">subtitle</div>
+                            </div>
+                        </div>
+
+                    </div>    <!-- /.works__col -->
+
+                    <div class="works__col">
+                          <div class="works__item">
+                          <img src="img/Layer%205.png" class="works__img">
+                           <div class="works__info">
+                                <div class="works__title">Title</div>
+                                <div class="works__category">subtitle</div>
+                            </div>
+                        </div>
+                    </div>    <!-- /.works__col -->
+                    
+                    <div class="works__col">
+                        <div class="works__item">
+                          <img src="img/Layer%203.png" class="works__img">
+                           <div class="works__info">
+                                <div class="works__title">Title</div>
+                                <div class="works__category">subtitle</div>
+                            </div>                           
+                        </div>
+                  
+                    </div>    <!-- /.works__col -->
+                    
+                    
+                    <div class="works__col">
+
+                        <div class="works__item">
+                          <img src="img/Layer%206.png" class="works__img">
+                           <div class="works__info">
+                                <div class="works__title">Title</div>
+                                <div class="works__category">subtitle</div>
+                            </div>
+                        </div>
+                  
+                    </div>    <!-- /.works__col -->
+                    
+                    
+           </div>     <!--     /.works__content -->
+                
+            </div>    <!-- /.works -->
+            
+            <button class="btn  btn--works__big" type="button">VIEW ALL</button>
+        </div>    <!-- /.container -->
+    </div>    
+    
+    
+    <!--   PRICE  -->
+    <div class="section  section--grey">
+        <div class="container">
+            <div class="section__title">Pricing Plans</div>
+             <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>   
+             
+            <div class="price__content">
+                <div class="price__col">
+                    <div class="price__col__head">
+                        <div class="price__title">Free Trail</div>
+                        <div class="price__subtitle"><span class="price__subtitle__num"><sup class="price__dollar">&#36;</sup>00</span> per month</div>
+                    </div>
+                    
+                    <div class="price__col__body">
+                        <div class="price__text">
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                        </div>
+                        <div class="btn  btn--black  btn--price">ORDER NOW</div>
+                    </div>
+                </div>
+                
+                <div class="price__col">
+                    <div class="price__col__head">
+                        <div class="price__title">Basic</div>
+                        <div class="price__subtitle"><span class="price__subtitle__num"><sup class="price__dollar">&#36;</sup>50</span> per month</div>
+                    </div>
+                    
+                    <div class="price__col__body">
+                        <div class="price__text">
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                        </div>
+                        <div class="btn  btn--black   btn--price">ORDER NOW</div>
+                    </div>
+                </div>
+                
+                <div class="price__col">
+                    <div class="price__col__head">
+                        <div class="price__title">Ultimates</div>
+                        <div class="price__subtitle"><span class="price__subtitle__num"><sup class="price__dollar">&#36;</sup>99</span> per month</div>
+                    </div>
+                    
+                    <div class="price__col__body">
+                        <div class="price__text">
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                            <p>30 Free Trail</p>
+                        </div>
+                        <div class="btn  btn--black   btn--price">ORDER NOW</div>
+                    </div>
+                </div>
+                
+            </div>                 
+        </div>    <!-- /.container -->
+    </div>
+    
+    
+    <!--   TEAM  -->
+    <div class="section">
+        <div class="container">
+            <div class="section__title">Our Team Member</div>
+            <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+            
+            <div class="team__content">
+                <div class="team__col">
+                    <img src="img/team/1.png" alt="">
+                    <div class="team__name">John Doe</div>
+                    <div class="team__prof">General Manager</div>
+                    <div class="team__contact">
+                       <a href="#" target="_blank"> <svg id="Bold" fill="#00897b" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path id="fb" d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"> <svg version="1.1" id="Capa_1" fill="#00897b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="30"
+                        width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path id="twitter" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                                C480.224,136.96,497.728,118.496,512,97.248z"/>
+                        </g>
+                    </g>
+                    </svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00897b" x="0px" y="0px"
+                         width="20" height="30" viewBox="0 0 511.62 511.619" style="enable-background:new 0 0 511.62 511.619;"
+                         xml:space="preserve">
+                        <g>
+                            <g>
+                                <path id="comments" d="M301.923,327.602c30.93-13.038,55.34-30.785,73.228-53.248c17.891-22.458,26.837-46.915,26.837-73.372
+                                    c0-26.458-8.946-50.914-26.837-73.376c-17.888-22.459-42.298-40.208-73.228-53.249c-30.93-13.039-64.571-19.556-100.928-19.556
+                                    c-36.354,0-69.995,6.521-100.927,19.56C69.14,87.4,44.729,105.149,26.84,127.609C8.947,150.068,0,174.523,0,200.982
+                                    c0,22.648,6.764,43.975,20.276,63.957c13.512,19.985,32.071,36.833,55.671,50.535c-1.902,4.572-3.853,8.754-5.852,12.566
+                                    c-2,3.806-4.377,7.467-7.139,10.991c-2.76,3.525-4.899,6.283-6.423,8.275c-1.523,1.998-3.997,4.809-7.424,8.422
+                                    c-3.428,3.617-5.618,5.996-6.567,7.135c0-0.191-0.383,0.24-1.143,1.287c-0.763,1.047-1.191,1.52-1.287,1.431
+                                    c-0.094-0.103-0.476,0.373-1.141,1.42c-0.666,1.048-1,1.571-1,1.571l-0.715,1.423c-0.284,0.568-0.476,1.137-0.57,1.712
+                                    c-0.096,0.567-0.144,1.19-0.144,1.854s0.094,1.28,0.286,1.854c0.383,2.471,1.477,4.466,3.284,5.996
+                                    c1.809,1.52,3.757,2.279,5.854,2.279h0.857c9.515-1.332,17.701-2.854,24.552-4.569c29.312-7.614,55.771-19.797,79.372-36.545
+                                    c17.128,3.046,33.88,4.568,50.248,4.568C237.349,347.156,270.994,340.641,301.923,327.602z M142.184,303.767l-12.564,8.846
+                                    c-5.33,3.614-11.227,7.331-17.7,11.14l9.995-23.986l-27.694-15.988c-18.276-10.656-32.454-23.219-42.542-37.685
+                                    c-10.089-14.465-15.131-29.502-15.131-45.111c0-19.417,7.474-37.594,22.414-54.534c14.938-16.94,35.067-30.358,60.382-40.259
+                                    c25.313-9.895,52.532-14.847,81.653-14.847c29.121,0,56.342,4.952,81.654,14.847c25.313,9.9,45.442,23.319,60.388,40.259
+                                    c14.94,16.939,22.408,35.116,22.408,54.534c0,19.414-7.468,37.59-22.408,54.53c-14.945,16.945-35.074,30.36-60.388,40.256
+                                    c-25.312,9.897-52.53,14.846-81.654,14.846c-14.272,0-28.833-1.335-43.681-3.997L142.184,303.767z"/>
+                                <path id="comments"  d="M491.347,338.156c13.518-19.896,20.272-41.255,20.272-64.098c0-23.411-7.139-45.303-21.409-65.666
+                                    c-14.277-20.362-33.694-37.305-58.245-50.819c4.374,14.274,6.563,28.739,6.563,43.398c0,25.503-6.368,49.676-19.129,72.519
+                                    c-12.752,22.836-31.025,43.01-54.816,60.524c-22.08,15.988-47.205,28.261-75.377,36.829
+                                    c-28.164,8.562-57.573,12.848-88.218,12.848c-5.708,0-14.084-0.377-25.122-1.137c38.256,25.119,83.177,37.685,134.756,37.685
+                                    c16.371,0,33.119-1.526,50.251-4.571c23.6,16.755,50.06,28.931,79.37,36.549c6.852,1.718,15.037,3.237,24.554,4.568
+                                    c2.283,0.195,4.381-0.476,6.283-1.995c1.903-1.526,3.142-3.614,3.71-6.276c-0.089-1.143,0-1.77,0.287-1.861
+                                    c0.281-0.09,0.233-0.712-0.144-1.852c-0.376-1.144-0.568-1.715-0.568-1.715l-0.712-1.424c-0.198-0.376-0.52-0.903-0.999-1.567
+                                    c-0.476-0.66-0.855-1.14-1.143-1.427c-0.28-0.284-0.705-0.763-1.28-1.424c-0.568-0.66-0.951-1.092-1.143-1.283
+                                    c-0.951-1.143-3.139-3.521-6.564-7.139c-3.429-3.613-5.899-6.42-7.422-8.418c-1.523-1.999-3.665-4.757-6.424-8.282
+                                    c-2.758-3.518-5.14-7.183-7.139-10.991c-1.998-3.806-3.949-7.995-5.852-12.56C459.281,374.855,477.843,358.059,491.347,338.156z"
+                                    />
+                            </g>
+</g>
+                        </svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"><svg id="regular" fill="#00897b" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path id="dribble" d="m16.354 23.17c.02-.006.039-.014.059-.021 12.215-4.853 8.836-23.149-4.413-23.149-6.649 0-12 5.42-12 12 0 8.327 8.434 14.269 16.354 11.17zm-11.073-3.111c.852-1.432 3.609-5.472 8.315-6.866.984 2.509 1.674 5.436 1.742 8.755-3.566 1.199-7.327.392-10.057-1.889zm11.532 1.263c-.131-3.189-.782-6.017-1.71-8.467 2.082-.325 4.492-.108 7.225.987-.581 3.261-2.666 6.002-5.515 7.48zm5.672-9.031c-3.01-1.131-5.663-1.272-7.959-.834-.355-.8-.728-1.569-1.123-2.277 3.523-1.407 5.605-3.122 6.537-4.03 1.645 1.904 2.622 4.369 2.545 7.141zm-3.61-8.209c-.848.807-2.845 2.437-6.26 3.77-1.674-2.648-3.464-4.516-4.598-5.562 3.628-1.494 7.812-.856 10.858 1.792zm-12.292-1.059c.856.753 2.735 2.561 4.548 5.357-2.49.802-5.612 1.391-9.409 1.474.604-2.894 2.408-5.346 4.861-6.831zm-5.051 8.337c4.25-.069 7.69-.74 10.409-1.648.376.659.733 1.377 1.076 2.123-4.735 1.508-7.694 5.401-8.827 7.159-1.828-2.04-2.836-4.702-2.658-7.634z"/></svg>
+                       </a> 
+                       
+                    </div>    <!-- /.team__contact -->
+                </div>    <!-- /.team__col -->
+                
+                <div class="team__col">
+                    <img src="img/team/2.png" alt="">
+                    <div class="team__name">Alexa Biru</div>
+                    <div class="team__prof">Office Director</div>
+                    <div class="team__contact">
+                       <a href="#" target="_blank"> <svg id="Bold" fill="#00897b" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path id="fb" d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"> <svg version="1.1" id="Capa_1" fill="#00897b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="30"
+                        width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path id="twitter" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                                C480.224,136.96,497.728,118.496,512,97.248z"/>
+                        </g>
+                    </g>
+                    </svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00897b" x="0px" y="0px"
+                         width="20" height="30" viewBox="0 0 511.62 511.619" style="enable-background:new 0 0 511.62 511.619;"
+                         xml:space="preserve">
+                        <g>
+                            <g>
+                                <path id="comments" d="M301.923,327.602c30.93-13.038,55.34-30.785,73.228-53.248c17.891-22.458,26.837-46.915,26.837-73.372
+                                    c0-26.458-8.946-50.914-26.837-73.376c-17.888-22.459-42.298-40.208-73.228-53.249c-30.93-13.039-64.571-19.556-100.928-19.556
+                                    c-36.354,0-69.995,6.521-100.927,19.56C69.14,87.4,44.729,105.149,26.84,127.609C8.947,150.068,0,174.523,0,200.982
+                                    c0,22.648,6.764,43.975,20.276,63.957c13.512,19.985,32.071,36.833,55.671,50.535c-1.902,4.572-3.853,8.754-5.852,12.566
+                                    c-2,3.806-4.377,7.467-7.139,10.991c-2.76,3.525-4.899,6.283-6.423,8.275c-1.523,1.998-3.997,4.809-7.424,8.422
+                                    c-3.428,3.617-5.618,5.996-6.567,7.135c0-0.191-0.383,0.24-1.143,1.287c-0.763,1.047-1.191,1.52-1.287,1.431
+                                    c-0.094-0.103-0.476,0.373-1.141,1.42c-0.666,1.048-1,1.571-1,1.571l-0.715,1.423c-0.284,0.568-0.476,1.137-0.57,1.712
+                                    c-0.096,0.567-0.144,1.19-0.144,1.854s0.094,1.28,0.286,1.854c0.383,2.471,1.477,4.466,3.284,5.996
+                                    c1.809,1.52,3.757,2.279,5.854,2.279h0.857c9.515-1.332,17.701-2.854,24.552-4.569c29.312-7.614,55.771-19.797,79.372-36.545
+                                    c17.128,3.046,33.88,4.568,50.248,4.568C237.349,347.156,270.994,340.641,301.923,327.602z M142.184,303.767l-12.564,8.846
+                                    c-5.33,3.614-11.227,7.331-17.7,11.14l9.995-23.986l-27.694-15.988c-18.276-10.656-32.454-23.219-42.542-37.685
+                                    c-10.089-14.465-15.131-29.502-15.131-45.111c0-19.417,7.474-37.594,22.414-54.534c14.938-16.94,35.067-30.358,60.382-40.259
+                                    c25.313-9.895,52.532-14.847,81.653-14.847c29.121,0,56.342,4.952,81.654,14.847c25.313,9.9,45.442,23.319,60.388,40.259
+                                    c14.94,16.939,22.408,35.116,22.408,54.534c0,19.414-7.468,37.59-22.408,54.53c-14.945,16.945-35.074,30.36-60.388,40.256
+                                    c-25.312,9.897-52.53,14.846-81.654,14.846c-14.272,0-28.833-1.335-43.681-3.997L142.184,303.767z"/>
+                                <path id="comments"  d="M491.347,338.156c13.518-19.896,20.272-41.255,20.272-64.098c0-23.411-7.139-45.303-21.409-65.666
+                                    c-14.277-20.362-33.694-37.305-58.245-50.819c4.374,14.274,6.563,28.739,6.563,43.398c0,25.503-6.368,49.676-19.129,72.519
+                                    c-12.752,22.836-31.025,43.01-54.816,60.524c-22.08,15.988-47.205,28.261-75.377,36.829
+                                    c-28.164,8.562-57.573,12.848-88.218,12.848c-5.708,0-14.084-0.377-25.122-1.137c38.256,25.119,83.177,37.685,134.756,37.685
+                                    c16.371,0,33.119-1.526,50.251-4.571c23.6,16.755,50.06,28.931,79.37,36.549c6.852,1.718,15.037,3.237,24.554,4.568
+                                    c2.283,0.195,4.381-0.476,6.283-1.995c1.903-1.526,3.142-3.614,3.71-6.276c-0.089-1.143,0-1.77,0.287-1.861
+                                    c0.281-0.09,0.233-0.712-0.144-1.852c-0.376-1.144-0.568-1.715-0.568-1.715l-0.712-1.424c-0.198-0.376-0.52-0.903-0.999-1.567
+                                    c-0.476-0.66-0.855-1.14-1.143-1.427c-0.28-0.284-0.705-0.763-1.28-1.424c-0.568-0.66-0.951-1.092-1.143-1.283
+                                    c-0.951-1.143-3.139-3.521-6.564-7.139c-3.429-3.613-5.899-6.42-7.422-8.418c-1.523-1.999-3.665-4.757-6.424-8.282
+                                    c-2.758-3.518-5.14-7.183-7.139-10.991c-1.998-3.806-3.949-7.995-5.852-12.56C459.281,374.855,477.843,358.059,491.347,338.156z"
+                                    />
+                            </g>
+</g>
+                        </svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"><svg id="regular" fill="#00897b" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path id="dribble" d="m16.354 23.17c.02-.006.039-.014.059-.021 12.215-4.853 8.836-23.149-4.413-23.149-6.649 0-12 5.42-12 12 0 8.327 8.434 14.269 16.354 11.17zm-11.073-3.111c.852-1.432 3.609-5.472 8.315-6.866.984 2.509 1.674 5.436 1.742 8.755-3.566 1.199-7.327.392-10.057-1.889zm11.532 1.263c-.131-3.189-.782-6.017-1.71-8.467 2.082-.325 4.492-.108 7.225.987-.581 3.261-2.666 6.002-5.515 7.48zm5.672-9.031c-3.01-1.131-5.663-1.272-7.959-.834-.355-.8-.728-1.569-1.123-2.277 3.523-1.407 5.605-3.122 6.537-4.03 1.645 1.904 2.622 4.369 2.545 7.141zm-3.61-8.209c-.848.807-2.845 2.437-6.26 3.77-1.674-2.648-3.464-4.516-4.598-5.562 3.628-1.494 7.812-.856 10.858 1.792zm-12.292-1.059c.856.753 2.735 2.561 4.548 5.357-2.49.802-5.612 1.391-9.409 1.474.604-2.894 2.408-5.346 4.861-6.831zm-5.051 8.337c4.25-.069 7.69-.74 10.409-1.648.376.659.733 1.377 1.076 2.123-4.735 1.508-7.694 5.401-8.827 7.159-1.828-2.04-2.836-4.702-2.658-7.634z"/></svg>
+                       </a> 
+                       
+                    </div>    <!-- /.team__contact -->
+                </div>    <!-- /.team__col -->
+                
+                <div class="team__col">
+                    <img src="img/team/3.png" alt="">
+                    <div class="team__name">Ronobir Sing</div>
+                    <div class="team__prof">Admin</div>
+                   <div class="team__contact">
+                       <a href="#" target="_blank"> <svg id="Bold" fill="#00897b" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path id="fb" d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"> <svg version="1.1" id="Capa_1" fill="#00897b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="30"
+                        width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path id="twitter" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                                C480.224,136.96,497.728,118.496,512,97.248z"/>
+                        </g>
+                    </g>
+                    </svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00897b" x="0px" y="0px"
+                         width="20" height="30" viewBox="0 0 511.62 511.619" style="enable-background:new 0 0 511.62 511.619;"
+                         xml:space="preserve">
+                        <g>
+                            <g>
+                                <path id="comments" d="M301.923,327.602c30.93-13.038,55.34-30.785,73.228-53.248c17.891-22.458,26.837-46.915,26.837-73.372
+                                    c0-26.458-8.946-50.914-26.837-73.376c-17.888-22.459-42.298-40.208-73.228-53.249c-30.93-13.039-64.571-19.556-100.928-19.556
+                                    c-36.354,0-69.995,6.521-100.927,19.56C69.14,87.4,44.729,105.149,26.84,127.609C8.947,150.068,0,174.523,0,200.982
+                                    c0,22.648,6.764,43.975,20.276,63.957c13.512,19.985,32.071,36.833,55.671,50.535c-1.902,4.572-3.853,8.754-5.852,12.566
+                                    c-2,3.806-4.377,7.467-7.139,10.991c-2.76,3.525-4.899,6.283-6.423,8.275c-1.523,1.998-3.997,4.809-7.424,8.422
+                                    c-3.428,3.617-5.618,5.996-6.567,7.135c0-0.191-0.383,0.24-1.143,1.287c-0.763,1.047-1.191,1.52-1.287,1.431
+                                    c-0.094-0.103-0.476,0.373-1.141,1.42c-0.666,1.048-1,1.571-1,1.571l-0.715,1.423c-0.284,0.568-0.476,1.137-0.57,1.712
+                                    c-0.096,0.567-0.144,1.19-0.144,1.854s0.094,1.28,0.286,1.854c0.383,2.471,1.477,4.466,3.284,5.996
+                                    c1.809,1.52,3.757,2.279,5.854,2.279h0.857c9.515-1.332,17.701-2.854,24.552-4.569c29.312-7.614,55.771-19.797,79.372-36.545
+                                    c17.128,3.046,33.88,4.568,50.248,4.568C237.349,347.156,270.994,340.641,301.923,327.602z M142.184,303.767l-12.564,8.846
+                                    c-5.33,3.614-11.227,7.331-17.7,11.14l9.995-23.986l-27.694-15.988c-18.276-10.656-32.454-23.219-42.542-37.685
+                                    c-10.089-14.465-15.131-29.502-15.131-45.111c0-19.417,7.474-37.594,22.414-54.534c14.938-16.94,35.067-30.358,60.382-40.259
+                                    c25.313-9.895,52.532-14.847,81.653-14.847c29.121,0,56.342,4.952,81.654,14.847c25.313,9.9,45.442,23.319,60.388,40.259
+                                    c14.94,16.939,22.408,35.116,22.408,54.534c0,19.414-7.468,37.59-22.408,54.53c-14.945,16.945-35.074,30.36-60.388,40.256
+                                    c-25.312,9.897-52.53,14.846-81.654,14.846c-14.272,0-28.833-1.335-43.681-3.997L142.184,303.767z"/>
+                                <path id="comments"  d="M491.347,338.156c13.518-19.896,20.272-41.255,20.272-64.098c0-23.411-7.139-45.303-21.409-65.666
+                                    c-14.277-20.362-33.694-37.305-58.245-50.819c4.374,14.274,6.563,28.739,6.563,43.398c0,25.503-6.368,49.676-19.129,72.519
+                                    c-12.752,22.836-31.025,43.01-54.816,60.524c-22.08,15.988-47.205,28.261-75.377,36.829
+                                    c-28.164,8.562-57.573,12.848-88.218,12.848c-5.708,0-14.084-0.377-25.122-1.137c38.256,25.119,83.177,37.685,134.756,37.685
+                                    c16.371,0,33.119-1.526,50.251-4.571c23.6,16.755,50.06,28.931,79.37,36.549c6.852,1.718,15.037,3.237,24.554,4.568
+                                    c2.283,0.195,4.381-0.476,6.283-1.995c1.903-1.526,3.142-3.614,3.71-6.276c-0.089-1.143,0-1.77,0.287-1.861
+                                    c0.281-0.09,0.233-0.712-0.144-1.852c-0.376-1.144-0.568-1.715-0.568-1.715l-0.712-1.424c-0.198-0.376-0.52-0.903-0.999-1.567
+                                    c-0.476-0.66-0.855-1.14-1.143-1.427c-0.28-0.284-0.705-0.763-1.28-1.424c-0.568-0.66-0.951-1.092-1.143-1.283
+                                    c-0.951-1.143-3.139-3.521-6.564-7.139c-3.429-3.613-5.899-6.42-7.422-8.418c-1.523-1.999-3.665-4.757-6.424-8.282
+                                    c-2.758-3.518-5.14-7.183-7.139-10.991c-1.998-3.806-3.949-7.995-5.852-12.56C459.281,374.855,477.843,358.059,491.347,338.156z"
+                                    />
+                            </g>
+</g>
+                        </svg>
+                       </a> 
+                       
+                        <a href="#" target="_blank"><svg id="regular" fill="#00897b" enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path id="dribble" d="m16.354 23.17c.02-.006.039-.014.059-.021 12.215-4.853 8.836-23.149-4.413-23.149-6.649 0-12 5.42-12 12 0 8.327 8.434 14.269 16.354 11.17zm-11.073-3.111c.852-1.432 3.609-5.472 8.315-6.866.984 2.509 1.674 5.436 1.742 8.755-3.566 1.199-7.327.392-10.057-1.889zm11.532 1.263c-.131-3.189-.782-6.017-1.71-8.467 2.082-.325 4.492-.108 7.225.987-.581 3.261-2.666 6.002-5.515 7.48zm5.672-9.031c-3.01-1.131-5.663-1.272-7.959-.834-.355-.8-.728-1.569-1.123-2.277 3.523-1.407 5.605-3.122 6.537-4.03 1.645 1.904 2.622 4.369 2.545 7.141zm-3.61-8.209c-.848.807-2.845 2.437-6.26 3.77-1.674-2.648-3.464-4.516-4.598-5.562 3.628-1.494 7.812-.856 10.858 1.792zm-12.292-1.059c.856.753 2.735 2.561 4.548 5.357-2.49.802-5.612 1.391-9.409 1.474.604-2.894 2.408-5.346 4.861-6.831zm-5.051 8.337c4.25-.069 7.69-.74 10.409-1.648.376.659.733 1.377 1.076 2.123-4.735 1.508-7.694 5.401-8.827 7.159-1.828-2.04-2.836-4.702-2.658-7.634z"/></svg>
+                       </a> 
+                       
+                    </div>    <!-- /.team__contact -->
+                </div>    <!-- /.team__col -->
+                
+            </div>    <!-- /.team__content -->
+            
+            <div class="team__dots">
+                <button class="dots"></button><button class="dots"></button><button class="dots"></button>
+            </div>
+        </div>    <!-- /.container -->
+    </div>
+    
+   
+    <!--   BLOG  -->
+    <div  id="blog"   class="section section--blue">
+        <div class="container">
+            <div class="section__title">Blog</div>
+            <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+            
+            <div class="blog__content">
+                   
+                <div class="blog__col">
+                        <img class="blog__photo  blog__photo--left" src="img/blog/seo.png" alt="">
+                        
+                        <div class="blog__text blog__text--left">
+                            <a href="" class="blog__title">SEO Quis Vestibulum</a>
+                            <div class="blog__subtitle">
+                                <img src="img/icons/calendar.svg" width="15px" alt=""> <time style="padding-right: 20px; padding-left: 10px">14.07.2017</time>
+                                <img src="img/icons/paper.svg" width="20px" alt="" style="margin-right:  10px"> Development
+                            </div>
+                            <div class="blog__prew">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</div>
+                       </div>
+                        
+                        <img class="blog__photo  blog__photo--left"  src="img/blog/desk2.png" alt="" width="570px">
+                </div>    <!-- /.blog__col -->
+ 
+                <div class="blog__col  blog__col--right">
+                        <div class="blog__text">
+                            <a href="" class="blog__title">SEO Quis Vestibulum</a>
+                            <div class="blog__subtitle">
+                                <img src="img/icons/calendar.svg" width="15px" alt=""> <time style="padding-right: 20px; padding-left: 10px">14.07.2017</time>
+                                <img src="img/icons/paper.svg" width="20px" alt="" style="margin-right:  10px"> Development
+                            </div>
+                            <div  class="blog__prew  blog__prew--right">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</div>
+                        </div>   
+                        
+                        <img class="blog__photo blog__photo--right" src="img/blog/desk1.png" alt="">
+                 
+                        <div class="blog__text">
+                            <a href="" class="blog__title">SEO Quis Vestibulum</a>
+                            <div class="blog__subtitle">
+                                <img src="img/icons/calendar.svg" width="15px" alt=""> <time style="padding-right: 20px; padding-left: 10px">14.07.2017</time>
+                                <img src="img/icons/paper.svg" width="20px" alt="" style="margin-right:  10px"> Development
+                            </div>
+                            <div class="blog__prew  blog__prew--right">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</div>
+                        </div>
+                </div>    <!-- /.blog__col -->   
+                    
+              </div>    <!-- /.blog__content -->
+              
+           <button class="btn btn--works__big">MORE VIEW</button>  
+           
+        </div>    <!-- /.container -->
+    </div>   
+    
+    
+    <!--   CONTACT US  -->
+    <div  id="contacts"   class="contacts">
+       <div class="section">
+            <div class="container">
+                <div class="section__title section__title--white">Contact Us</div>
+                <div class="section__subtitle section__subtitle--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                
+                <div class="contacts__item">
+                    <div class="contacts__col">
+                        <img class="contacts__photo" src="img/contacts/geo.png" alt="">
+                        <div class="contacts__text"><p>Nobinagar savar, Dhaka</p> <p>Bangladesh</p></div>
+                    </div>
+                    
+                    <div class="contacts__col">
+                        <img class="contacts__photo"  src="img/contacts/phone.png" alt="">
+                        <div class="contacts__text"><p>+8801743331996</p> <p>+8801928737807 </p></div>
+                    </div>
+                    
+                    <div class="contacts__col">
+                        <img class="contacts__photo"  src="img/contacts/mail.png" alt="">
+                        <div class="contacts__text"><p>quickmasud@gmail.com </p> <p>quickmasud@yahoo.com</p></div>
+                    </div>
+                </div>    <!-- /.item -->
+                
+                <div class="form__content">
+                    <input action="" class="form" placeholder="Your NAME">
+                    <input action="" class="form form--email" placeholder="Your Email">
+                    <textarea type="text" class="form form--message" placeholder="Write Message"></textarea>
+                </div>    <!-- /.form__content -->
+                
+                <button class="btn btn--white">SEND</button>
+            </div>    <!-- /.container -->  
+        </div>    <!-- /.section -->
+    </div>    
+    
+
+    <footer> All rights Reserved © 2017</footer>
+    
+</div>    <!-- /.page -->
+
+<script src="js/app.js"></script>
+</body>
+</html>
